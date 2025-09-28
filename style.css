@@ -523,6 +523,7 @@ footer{
 
 .links{
     width: 100%;
+    height: auto;
     display: flex;
     justify-content: space-evenly;
 }
@@ -531,10 +532,11 @@ footer{
     display: flex;
     justify-content: left;
     align-items: center;
+    padding: 40px;
 }
 .cpy-logo img{
     width: 100px;
-    height: 40px;
+    height: 30px;
 }
 
 .media img{
