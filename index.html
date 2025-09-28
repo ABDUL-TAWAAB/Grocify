@@ -1,45 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Grocify</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
     <main>
-    <header>
-        <img src="images/Grocify.png" alt="company logo">
-       <div class="Search"><input type="text" placeholder="Search"><i id="search-btn" class='bxr  bx-search'  ></i> </div>
-        <li><a href="Home">Home</a></li>
-        <li><a href="About">About</a></li>
-        <li><a href="Conatct">Conatct</a></li>
-        <i class='bxr  bx-cart' id="cart" >cart</i> 
-        <a id="login" href="">Log In</a>
-        <a id="register" href="">Register</a>
-    </header>
-    <div class="hero-section">
-    <h2>Buy your groceries and have it delivered 
-        to your doorstep with ease.</h2>
-    <div class="hero-image">
-        <img src="images/grocery-png-115539559137hbqku3ydb-removebg-preview 1.png" alt="">
-    </div>
-    </div>
-</main>
-    <!--===== section of the site============-->
+        <header>
+            <img src="images/Grocify.png" alt="company logo">
+            <div class="Search"><input type="text" placeholder="Search"><i id="search-btn" class='bxr  bx-search'></i>
+            </div>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Conatct">Conatct</a></li>
+            <i class='bxr  bx-cart' id="cart"></i>
+            <a id="login" href="">Log In</a>
+            <a id="register" href="">Register</a>
+        </header>
+        <div id="Home" class="hero-section">
+            <h2>Buy your groceries and have it delivered
+                to your doorstep with ease.</h2>
+            <div class="hero-image">
+                <img src="images/grocery-png-115539559137hbqku3ydb-removebg-preview 1.png" alt="">
+            </div>
+        </div>
+    </main>
+    <!--===== sevices section============-->
 
-
-    <div class="section2">
-        <div class="title"><h2>Why We Are The Best?</h2></div>
+    <div class="section2" id="About">
+        <div class="title">
+            <h2>Why We Are The Best?</h2>
+        </div>
 
         <div class="details">
-            <img src="images/Rectangle 384.png" alt="">
-            <img src="images/Smart-Sentials-Office-Delivery-Service 1.png" alt="">
+            <div class="deliverer-img">
+                <img class="dvl-shape" src="images/Rectangle 384.png" alt="">
+                <img class="deliverar" src="images/Smart-Sentials-Office-Delivery-Service 1.png" alt="">
+            </div>
 
-            
+
+            <div class="services">
+                <div id="fst-chd" class="sev-box">
+                    <p>We serve you the best of fresh, nutrient-rich and healthy groceries</p>
+                </div>
+                <div id="scd-chd" class="sev-box">
+                    <p>Swift Delivery</p>
+                </div>
+                <div id="thd-chd" class="sev-box">
+                    <p>Great Refund Policy</p>
+                </div>
+                <div id="lst-chd" class="sev-box">
+                    <p>Wide coverage Map</p>
+                </div>
+            </div>
         </div>
 
     </div>
+
+    <!--======== sales======-->
+
+    <div class="flash-sales-section">
+        <div class="sales-title">
+            <img src="images/Line 3.png" alt="line">
+            <h2>Flash Sales</h2>
+            <img src="images/Line 3.png" alt="line">
+        </div>
+
+        <div class="time">
+            <div class="t-box">
+                <h3>00</h3>
+                <p>DAYS</p>
+            </div>
+
+            <div class="t-box">
+                <h3>00</h3>
+                <p>HOURS</p>
+            </div>
+
+            <div class="t-box">
+                <h3>00</h3>
+                <p>MINS</p>
+            </div>
+        </div>
+        <br><br>
+        <div class="flash-product">
+
+            <!--===   caruasel ====-->
+        </div>
+
+        <div class="view-more">
+            <a href="#">View More</a>
+        </div>
+    </div>
+
+    <!--==============Category page==============-->
+
+    <div class="category-section">
+
+        <div class="caption">
+            <h2>Enjoy your favorite grocery items</h2>
+
+            <img src="products/istockphoto-513986542-1024x1024-removebg-preview 1.png" alt="">
+        </div>
+
+        <div class="category-carousel">
+            <div class="cty-title">
+                <h2>Shop by category</h2>
+            </div>
+            <br><br>
+            <div class="categ-product">
+                <h1>PRODUCTS HERE</h1>
+                <!--===   caruasel ====-->
+            </div>
+
+            <div class="view-more">
+                <a href="#">View More</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!--============Groceyy-display section======-->
+
+    <div class="grocery-display">
+        <div class="gcry-title">
+            <h2>Grocery Display</h2>
+        </div>
+        <div class="prod-box">
+
+            <h1>PRODUCTS HERE</h1>
+            <!--========= Products-->
+        </div>
+
+
+        <img src="images/istockphoto-513986542-1024x1024-removebg-preview 2.png" alt="">
+        <div class="view-more">
+            <a href="#">View More</a>
+        </div>
+
+    </div>
+
+    <div class="sales-title" id="happy-c">
+        <img src="images/Line 3.png" alt="line">
+        <h2>Happy Clients</h2>
+        <img src="images/Line 3.png" alt="line">
+    </div>
+
+    <div class="our-clients">
+        <div class="clnt-box">
+            <div class="client">
+                <div class="rate">
+                    <div class="star">
+                        <i class='bxr  bx-star'></i>
+                        <i class='bxr  bx-star'></i>
+                        <i class='bxr  bx-star'></i>
+                        <i class='bxr  bx-star'></i>
+                        <i class='bxr  bx-star'></i>
+                    </div>
+                    <p>May 15 2025</p>
+                </div>
+                <p id="msg">
+                    Everything was great, super quick delivery, great packaging, attention to detail and very helpful
+                    staff. Thank you very much.</p>
+
+                <div class="client-img">
+                    <img src="images/Ellipse 69.png" alt="client">
+                    <span>Robez Estabee</span>
+                </div>
+            </div>
+
+            <div class="client">
+                <div class="rate">
+                    <div class="star">
+                        <i class='bxr  bx-star'></i>
+                        <i class='bxr  bx-star'></i>
+                        <i class='bxr  bx-star'></i>
+                        <i class='bxr  bx-star'></i>
+                        <i class='bxr  bx-star'></i>
+                    </div>
+                    <p>Sep 01 2025</p>
+                </div>
+                <p id="msg">Great, super quick delivery, great service, good attention to detail and very helpful staff.
+                    Thank
+                    you grosa. </p>
+
+                <div class="client-img">
+                    <img src="images/Ellipse 70.png" alt="">
+                    <span>Jekins Pheobe</span>
+                </div>
+            </div>
+
+
+            <div class="client">
+                <div class="rate">
+                    <div class="star">
+                        <i class='bxr  bx-star'></i>
+                        <i class='bxr  bx-star'></i>
+                        <i class='bxr  bx-star'></i>
+                        <i class='bxr  bx-star'></i>
+                        <i class='bxr  bx-star'></i>
+                    </div>
+                    <p>Dec 18 2025</p>
+                </div>
+                <p id="msg">Great, super quick delivery, great service, good attention to detail and very helpful staff.
+                    Thank
+                    you grosa. </p>
+
+                <div class="client-img">
+                    <img src="images/Ellipse 69.png" alt="">
+                    <span>Robez Estabee</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--======== Download mobile App view======-->
+
+    <section class="mobile-app">
+        <div class="boxes">
+            <div id="fst-bx"></div>
+            <div id="scd-bx"></div>
+            <img src="images/Group 469.png" alt="mobile App">
+            <span class="down-ld-txt">
+                <h3>Download Our Mobile App</h3>
+                <p> Simple and efficient to use!</p>
+            </span>
+        </div>
+
+        <div class="sites">
+            <div class="store">
+                <img src="images/Vector.png" alt="">
+                <p>Download on the Apple store</p>
+            </div>
+
+            <div class="store">
+                <img src="images/download__2_-removebg-preview 1.png" alt="">
+                <p>Download on the Google Play store</p>
+                <p></p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="cpy-logo">
+            <img src="images/Grocify.png" alt="">
+        </div>
+        <div class="links">
+            <div id="useful-links" class="help">
+                <a href="#About">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <div class="help">
+                <h4>Help</h4>
+                <a href="#">Customer Support</a>
+                <a href="#">Delivery Details</a>
+            </div>
+
+
+            <div id="connect" class="help">
+                <h4>Get Connected</h4>
+                <a href="#">Join the conversation on social media and stay connected with our latest products and
+                    Services.</a>
+                <div class="media">
+                    <img src="images/image 1.png" alt="">
+                    <img src="images/image 2.png" alt="">
+                    <img src="images/image 3.png" alt="">
+                </div>
+            </div>
+
+            <div id="saved" class="help">
+                <h4>Stay Informed</h4>
+                <a href="#">Subscribe to our notification to receive updates of new products and services.
+                </a>
+                <h4 class="sub">
+                    <a href="#">Subscribe</a>
+                </h4>
+            </div>
+        </div>
+        
+        <div class="p-p">
+            <p>Privacy Policy | Terms of Use | Refund Policy
+            </p>
+        </div>
+    </footer>
 </body>
+
 </html>

@@ -3,6 +3,10 @@
     padding: 0;
 
 }
+
+html{
+    scroll-behavior: smooth;
+}
 body{
     width: 100%;
     margin: 0;
@@ -14,12 +18,11 @@ body{
 header{
     width: 100%;
     height: auto;
-    padding: 40px;
+    padding-top: 40px;
     background-color:transparent;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    z-index: 1000;
 }
 
 header img{
@@ -43,7 +46,7 @@ header input{
     font-size: 22px;
 }
 #cart{
-    font-size: 22px;
+    font-size: 30px;
     color: #fff;
     font-weight: lighter;
 }
@@ -59,8 +62,9 @@ header input{
 }
 #login:hover{
     background-color: #fff;
+    border: none;
     color: #4B773B;
-    transition: 0.5s ease-in-out;
+    transition: 0.5s ease;
     outline: none;
 }
 #register{
@@ -98,7 +102,7 @@ top: 405.63px;
 left: -3px;
 opacity: 1;
 box-shadow: 0px 4px 55px 0px #3399444A;
-background: linear-gradient(126.52deg, #4B773B 40.84%, rgba(58, 111, 40, 0.88) 48.71%, rgba(74, 149, 47, 0.76) 64.46%, #4A952F 64.46%);
+background: linear-gradient(126.52deg, #4B773B 40.84%, rgba(58, 111, 40, 0.88) 48.71%, rgba(74, 149, 47, 0.76) 64.46%);
 
 }
 
@@ -132,27 +136,28 @@ width: 600px;
 height: 500px;
 top: 1179.99px;
 left: 1336.75px;
-opacity: 1;
-
 }
 
 .section2{
     width: 100%;
     height: 570px;
+    align-content: center;
 }
 
 .title{
-    margin: 150px;
+    margin-top: 20px;
     width: 100%;
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    top: 80px;
 }
 
 .title h2{
     font-size: 35px;
-    width: 250px;
+    width: 300px;
 }
 
 .details{
@@ -162,9 +167,418 @@ opacity: 1;
     align-items: center;
 }
 
-.details img{
-width: 600px;
+.deliverer-img img{
 height: 600px;
-position: absolute;
+float: ;
+
 }
 
+.deliverar{
+    position: relative;
+    top: -620px;
+    left: 50px;
+}
+
+
+.details{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.details .services{
+    display: flex;
+    position: relative;
+    top: -200px;
+    right: 100px;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 20px;
+}
+
+
+.sev-box{
+    width: 350px;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    border-radius: 8px;
+    justify-content: left;
+    text-align: left;
+    align-content: left;
+    box-shadow: 0 2px 4px;
+    transition: all 0.5s ease-in-out;
+}
+
+.sev-box:hover{
+    transform: scale(1.1);
+}
+
+/* ======================= SALES PAGE============== */
+
+.flash-sales-section{
+    margin-top: 180px;
+    width: 100%;
+    height: auto;
+}
+.sales-title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    align-items: center;
+}
+
+.sales-title img{
+    width: 200px;
+    border: 1px solid black;
+    background-color: black;
+}
+
+.time{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.t-box{
+    width: 250px;
+    height: 70px;
+    padding: 10px;
+    border-radius: 15px;
+    outline: none;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.t-box h3, .t-box p{
+    color: #fff;
+
+}
+
+.view-more{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 130px;
+}
+
+.view-more a{
+    border: 1px solid #4B773B;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    color: #4B773B;
+    border-radius: 15px;
+    text-decoration: none;
+}
+.view-more a:hover{
+    border: none;
+    background-color: #4B773B;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+/*================ Category page styling ======= */
+.category-section{
+    width: 100%;
+    height: auto;
+}
+
+.caption{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.caption img{
+width: 400px;
+height: 400px;
+
+}
+
+.caption h2{
+    width: 400px;
+    font-size: 40px;
+    text-align: center;
+    margin-left: 9%;
+}
+.cty-title{
+    width: 100%;
+    height: auto;
+
+}
+
+.cty-title h2{
+    font-size: 25px;
+    margin-left: 9%;
+}
+
+/*========= Product display page=======*/
+
+.gcry-title{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gcry-title h2{
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.grocery-display img{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    top: 100px;    
+}
+
+#happy-c{
+    margin-top: 50px;
+}
+
+.our-clients{
+    width: 100%;
+    height: auto;
+    background-color: #2BEA0C08;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.clnt-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px 20px 20px;
+}
+.rate{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.star i{
+    color: #FCD061E5;
+    font-size: 25px;
+
+}
+.client{
+width: 280px;
+height:auto;
+border-width: 1px;
+padding: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: #fff;
+box-shadow: 0 1px 1px;
+border-radius: 3px;
+}
+
+.client #msg{
+    margin: 70px 0 25px 0;
+    text-align: left;
+    font-weight: lighter;
+    line-height-step: 1.5px;
+}
+
+.client-img{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+}
+.client-img img{
+    width: 70px;
+    height: 70px;
+
+}
+
+.client-img span{
+font-family: Lato;
+font-weight: lighter;
+font-size: 16px;
+text-align: center;
+
+}
+
+/*===============Download mon=bile app view==========*/
+
+.mobile-app{
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+.boxes{
+    width:1000px;
+    align-items: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+}
+.mobile-app .boxes #fst-bx{
+width: 400px;
+height: 319px;
+border-radius: 8.88px;
+background-color: #2BEA0C1F;
+
+}
+
+.mobile{
+    align-items: center;
+}
+
+#scd-bx{
+    width: 300px;
+    height: 500px;
+    position: relative;
+    top: 60px;
+    left: -200px;
+}
+
+.boxes img{
+    width: 350px;
+    height: 450px;
+    position: relative;
+    left: -700px;
+}
+
+.down-ld-txt{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: transparent;
+}
+.store{
+    width: 230px;
+    height: 80px;
+    border-radius:15px;
+    padding: 10px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.store p{
+    color: #fff;
+    font-weight: lighter;
+    font-size: 18px;
+}
+.store img{
+    width: 60px;
+    height: 60px;
+}
+.sites{
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+/*=============== Footer styling ========== */
+footer{
+    background-color: #000000DE;
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    margin-top: 100px;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.links{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cpy-logo{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.cpy-logo img{
+    width: 100px;
+    height: 40px;
+}
+
+.media img{
+    width: 30px;
+    height: 30px;
+}
+
+
+.help{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.help h4{
+    color: white;
+    font-weight: bold;
+}
+.help a{
+    font-family: Lato;
+    color: #fff;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+.help a:hover{
+    color: darkgray;
+    transition: 0.3s ease-in-out;
+}
+.sub a{
+    color:#31BB1A;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.p-p{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.p-p p{
+    color: #fff;
+    font-size: 18px;
+}
