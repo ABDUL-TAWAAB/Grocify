@@ -1,40 +1,53 @@
 [
-    {
-        "id": 101,
-        "name": "Chickin",
-       "price": 99.90,
-       "image": "prod/photo-1587593810167-a84920ea0781-removebg-preview 1.png",
-    },
+  {
+    "id": 101,
+    "name": "Chickin",
+    "price": 99.90,
+    "image": "prod/chickin.png",
+    "categoryImg": "prod/frozen_food.png",
+    "categoryName": "Frozen Food"
 
-    {
-        "id": 102,
-        "name": "Milo",
-        "price": 10.88,
-        "image": "prod/milo.png"
-    },
-    {
-        "id": 103,
-        "name": "Watermelon",
-        "price": 20.0,
-        "image": "prod/milo.png"
-    },
-
-    {
-        "id": 104,
-        "name": "Noodles/Pasta",
-        "price": 30.59,
-        "image": "prod/noodles.png"
-    },
-    {
-        "id": 105,
-        "name": "Fish Fillet",
-        "price": 40.20,
-        "image": "prod/fish_fillet"
-    },
-    {
-        "id":106,
-        "name": "Pork",
-        "price": 20.5,
-        "image": "prod/pork.png"
-    }
+  },
+  {
+    "id": 102,
+    "name": "Cerease",
+    "price": 10.88,
+    "image": "prod/cerease.png",
+    "categoryImg": "prod/baverages.png",
+    "categoryName": "Baverages"
+  },
+  {
+    "id": 103,
+    "name": "Watermelon",
+    "price": 20.0,
+    "image": "prod/mellon.png",
+    "categoryImg": "prod/fruits.png",
+    "categoryName": "Friuts"
+  },
+  {
+    "id": 104,
+    "name": "Banana",
+    "price": 30.59,
+    "image": "prod/banana.png",
+    "categoryImg": "prod/noodles.png",
+    "categoryName": "Noodles/Pesta"
+  },
+  {
+    "id": 105,
+    "name": "Fish Fillet",
+    "price": 40.20,
+    "image": "prod/fish_fillet.png"
+  },
+  {
+    "id": 106,
+    "name": "Pork",
+    "price": 20.5,
+    "image": "prod/pork.png"
+  },
+  {
+    "id": 107,
+    "name": "Corn Flakes",
+    "price": 30.20,
+    "image": "prod/cornflakes.png"
+  }
 ]

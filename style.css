@@ -169,7 +169,6 @@ left: 1336.75px;
 
 .deliverer-img img{
 height: 600px;
-float: ;
 
 }
 
@@ -234,6 +233,7 @@ float: ;
 
 .sales-title img{
     width: 200px;
+    height: 2px;
     border: 1px solid black;
     background-color: black;
 }
@@ -335,10 +335,12 @@ height: 400px;
     align-items: center;
 }
 
+
 .gcry-title h2{
     font-size: 25px;
     text-transform: uppercase;
 }
+
 
 .grocery-display img{
     width: 500px;
@@ -587,3 +589,67 @@ footer{
 
 
 /* ======= json elements styling======*/
+.products {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  width: 200px;
+  height: auto;
+  align-content: center;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+}
+.productContainer{
+    height:fit-content;
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.producr-price{
+    font-size: 10px;
+}
+
+.categ-product{
+  position: relative;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-evenly;
+  margin: auto;
+  overflow: hidden;
+}
+
+.categ-product i{
+    padding: 10px;
+    font-size: 36px;
+    background-color: black;
+    color: wheat;
+    border-radius: 50%;
+}
+
+.categ-product i:hover{
+    background-color: white;
+    border: 1px black;
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+.product-card img {
+  width:150px;
+  height: 150px;
+  border-radius: 8px;
+}
+
+.add{
+    background-color: red;
+    display: flex;
+    justify-content: space-evenly;
+}

@@ -1,26 +1,29 @@
-fetch('products.json')
-.then(response =>{
-    if(!response.ok) throw new Error('Network response was not ok')
-    return response.json();
-})
-.then(products =>{
-    const container = document.getElementById('productContainer');
-    container.innerHTML = '';
+// cateories upload fetched from products.json
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("products.json")
+    .then(response => response.json())
+    .then(data => {
+      const container = document.getElementById("products-container");
 
-    products.forEach(product => {
-        const productDev = document.createElement('div');
-        productDev.className = 'prod';
+      data.forEach(product => {
+        // Create a product card
+        const card = document.createElement("div");
+        card.classList.add("product-card");
 
-        productDev.innerHTML = `<img src="${product.image}>
-        <div class="product-details>
-        <h4>${product.name}</h4>
-        <p><strong>Price:</strong> ${product.price.toFixed(2)}</p>
-        </div>
+        card.innerHTML = `
+          <img src="${product.image}" alt="${product.name}">
+          <h4 class="product-name">${product.name}</h4>
+          <div class="add">
+          <p class="product-price">Price: GHS${product.price}</p>
+          <button> Add to Cart </button>
+          </div>
         `;
-        container.appendChild(productDev)  
-    });
-})
-.catch(error =>{
-    document.getElementById("productContainer").innerHTML = "Failed to upload products.";
-    Console.error("Error fetching JSON:", error)
-})
+
+        container.appendChild(card);
+      });
+    })
+    .catch(error => console.error("Error loading products:", error));
+});
+
+
+// 
