@@ -24,5 +24,17 @@
         "name": "Noodles/Pasta",
         "price": 30.59,
         "image": "prod/noodles.png"
+    },
+    {
+        "id": 105,
+        "name": "Fish Fillet",
+        "price": 40.20,
+        "image": "prod/fish_fillet"
+    },
+    {
+        "id":106,
+        "name": "Pork",
+        "price": 20.5,
+        "image": "prod/pork.png"
     }
 ]
