@@ -25,6 +25,12 @@ header{
     align-items: center;
 }
 
+.nav{
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+
 header img{
     width: 70x;
     height: 40px;
@@ -172,7 +178,7 @@ height: 600px;
 
 }
 
-.deliverar{
+.deliverer{
     position: relative;
     top: -620px;
     left: 50px;
@@ -334,7 +340,9 @@ height: 400px;
     justify-content: center;
     align-items: center;
 }
-
+.grocery-display{
+    padding-top: 90px;
+}
 
 .gcry-title h2{
     font-size: 25px;
@@ -440,45 +448,63 @@ text-align: center;
 }
 
 .boxes{
-    width:1000px;
+    width:100%;
     align-items: center;
     display: flex;
     align-content: center;
     justify-content: center;
+    gap: 190px;
 
 }
 .mobile-app .boxes #fst-bx{
 width: 400px;
 height: 319px;
 border-radius: 8.88px;
-background-color: #2BEA0C1F;
+position: relative;
+background-color: #28e00c1f;
 
+}
+.mobile-app .boxes #scd-bx {
+width: 400px;
+height: 319px;
+border-radius: 8.88px;
+position: relative;
+top: -130px;
+left: 130px;
+background-color: #28e00c1f;
 }
 
 .mobile{
     align-items: center;
 }
 
-#scd-bx{
-    width: 300px;
-    height: 500px;
-    position: relative;
-    top: 60px;
-    left: -200px;
+.spans{
+    width:auto ;
+    height: 600px;
+    align-items: center;
+}
+.spans img{
+    width: 340px;
+    height: 400px;
+    position:relative;
+    top: -550px;
+    
 }
 
-.boxes img{
-    width: 350px;
-    height: 450px;
-    position: relative;
-    left: -700px;
-}
 
 .down-ld-txt{
     display: flex;
+    width: 350px;
     flex-direction: column;
     gap: 20px;
     background-color: transparent;
+}
+.down-ld-txt h3{
+    font-size: 35px;
+}
+
+.down-ld-txt p{
+    font-size: 22px;
 }
 .store{
     width: 230px;
@@ -515,7 +541,6 @@ background-color: #2BEA0C1F;
 footer{
     background-color: #000000DE;
     display: flex;
-    width: 100%;
     height: auto;
     padding: 50px;
     margin-top: 100px;
@@ -575,7 +600,6 @@ footer{
 }
 
 .p-p{
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -605,12 +629,15 @@ footer{
   align-content: center;
   box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
 }
-.productContainer{
-    height:fit-content;
+
+
+.productContainer, .flashContainer{
+height:fit-content;
   display: flex;
   gap: 20px;
   overflow-x: auto;
   scroll-behavior: smooth;
+  scrollbar-width: none;
 }
 
 .producr-price{
@@ -619,20 +646,20 @@ footer{
 
 .categ-product{
   position: relative;
-  width: 95%;
+  width: 80%;
   display: flex;
   align-items: center;
-  gap: 10px;
-  justify-content: space-evenly;
+  gap: 20px;
+  justify-content: space-between;
   margin: auto;
   overflow: hidden;
 }
 
 .categ-product i{
-    padding: 10px;
-    font-size: 36px;
+    padding: 20px;
+    font-size:px;
     background-color: black;
-    color: wheat;
+    color: #fff;
     border-radius: 50%;
 }
 
@@ -648,8 +675,100 @@ footer{
   border-radius: 8px;
 }
 
-.add{
-    background-color: red;
+
+.buyProd{
+  position: relative;
+  width: 85%;
+  display:flex;
+  padding-top: 50px;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-evenly;
+  margin: auto;
+  overflow: hidden;
+}
+
+.sellingContainer{
+  height: auto;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.actual-pruduct{
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+}
+
+
+.actualProd-card{
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap:30px;
+  width: auto;
+  height: auto;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+}
+
+.actualProd-card img{
+ margin-top: 0;
+   width:150px;
+  height: 150px;
+  border-radius: 8px;
+  position: relative;
+  top: -1px;
+}
+
+.product-image{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:center ;
+  width:150px;
+  height: 150px;
+  border-radius: 8px;
+}
+
+.add{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.qty-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.qty-boxes{
+    width: 40%;
+    display: flex;
+    padding: 5px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.qty-boxes #decrease, .qty-boxes #increase{
+    width: 20px;
+    font-size: 14px;
+    color:black;
+    background-color:#ccc;
+    border-radius: 4px;
+    padding: 2px;
+    border: none;
+}
+#addCart{
+    padding: 2px 6px;
+    background-color: #4B773B;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
 }

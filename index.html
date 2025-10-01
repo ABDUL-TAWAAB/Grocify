@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grocify</title>
     <link rel="stylesheet" href="style.css">
-    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="mobileView.css">
+<link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -15,12 +16,15 @@
             <img src="images/Grocify.png" alt="company logo">
             <div class="Search"><input type="text" placeholder="Search"><i id="search-btn" class='bxr  bx-search'></i>
             </div>
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#Conatct">Conatct</a></li>
             <i class='bxr  bx-cart' id="cart"></i>
-            <a id="login" href="">Log In</a>
-            <a id="register" href="">Register</a>
+            <div class="nav">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Conatct">Conatct</a></li>
+                <a id="login" href="">Log In</a>
+                <a id="register" href="">Register</a>
+            </div>
+            <i class='bxr  bx-menu-wider'  ></i> 
         </header>
         <div id="Home" class="hero-section">
             <h2>Buy your groceries and have it delivered
@@ -40,7 +44,7 @@
         <div class="details">
             <div class="deliverer-img">
                 <img class="dvl-shape" src="images/Rectangle 384.png" alt="">
-                <img class="deliverar" src="images/Smart-Sentials-Office-Delivery-Service 1.png" alt="">
+                <img class="deliverer" src="images/Smart-Sentials-Office-Delivery-Service 1.png" alt="">
             </div>
 
 
@@ -89,8 +93,11 @@
         </div>
         <br><br>
         <div class="flash-product">
-
-            <!--===   caruasel ====-->
+            <div class="categ-product">
+                <i class='bxr  bx-chevrons-left' id="prev-btn"></i>
+                <div id="flash-container" class="flashContainer"> </div>
+                <i class='bxr  bx-chevrons-right' id="next-btn"></i>
+            </div>
         </div>
 
         <div class="view-more">
@@ -114,10 +121,10 @@
             </div>
             <br><br>
             <div class="categ-product">
-                <i class='bxr  bx-chevrons-left'  ></i>
+                <i class='bxr  bx-chevrons-left' id="prev-btn"></i>
                 <div id="products-container" class="productContainer">
                 </div>
-                <i class='bxr  bx-chevrons-right'  ></i>
+                <i class='bxr  bx-chevrons-right' id="next-btn"></i>
             </div>
 
             <div class="view-more">
@@ -133,16 +140,20 @@
         <div class="gcry-title">
             <h2>Grocery Display</h2>
         </div>
-        <div class="prod-box">
 
-            <h1>PRODUCTS HERE</h1>
-            <!--========= Products-->
+        <!--==================== Api fetced from the product.json file============-->
+        <div class="buyProd" id="">
+            <i class='bxr  bx-chevrons-left' id="prev-btn"></i>
+            <div class="sellingContainer" id="selling-container"> </div>
+            <i class='bxr  bx-chevrons-right' id="next-btn"></i>
         </div>
 
-
-        <img src="images/istockphoto-513986542-1024x1024-removebg-preview 2.png" alt="">
         <div class="view-more">
             <a href="#">View More</a>
+        </div>
+        <div class="gcry-image">
+            <img src="images/istockphoto-513986542-1024x1024-removebg-preview 2.png" alt="">
+
         </div>
 
     </div>
@@ -226,9 +237,11 @@
 
     <section class="mobile-app">
         <div class="boxes">
-            <div id="fst-bx"></div>
-            <div id="scd-bx"></div>
-            <img src="images/Group 469.png" alt="mobile App">
+            <div class="spans">
+                <div id="fst-bx"></div>
+                <div id="scd-bx"></div>
+                <img src="images/Group 469.png" alt="mobile App">
+            </div>
             <span class="down-ld-txt">
                 <h3>Download Our Mobile App</h3>
                 <p> Simple and efficient to use!</p>
@@ -244,7 +257,6 @@
             <div class="store">
                 <img src="images/download__2_-removebg-preview 1.png" alt="">
                 <p>Download on the Google Play store</p>
-                <p></p>
             </div>
         </div>
     </section>

@@ -8,14 +8,7 @@
     "categoryName": "Frozen Food"
 
   },
-  {
-    "id": 102,
-    "name": "Cerease",
-    "price": 10.88,
-    "image": "prod/cerease.png",
-    "categoryImg": "prod/baverages.png",
-    "categoryName": "Baverages"
-  },
+
   {
     "id": 103,
     "name": "Watermelon",
@@ -36,18 +29,55 @@
     "id": 105,
     "name": "Fish Fillet",
     "price": 40.20,
-    "image": "prod/fish_fillet.png"
+    "image": "prod/fish_fillet.png",
+    "categoryImg": "prod/fruits.png",
+    "categoryName": "Frozen Food" 
   },
   {
     "id": 106,
     "name": "Pork",
     "price": 20.5,
-    "image": "prod/pork.png"
+    "image": "prod/pork.png",
+    "categoryImg": "prod/fruits.png",
+    "categoryName": "Meat"
   },
   {
     "id": 107,
     "name": "Corn Flakes",
     "price": 30.20,
-    "image": "prod/cornflakes.png"
-  }
+    "image": "prod/cornflakes.png",
+    "categoryImg": "prod/fruits.png",
+    "categoryName": "Noodles/Pesta"
+  },
+  {
+    "id": 108,
+    "name": "Bag of Rice",
+    "price": 40.3,
+    "image": "prod/bag_of_rice.png",
+    "categoryImg": "prod/fruits.png",
+    "categoryName": "Baverages"
+  },
+      {
+    "id": 102,
+    "name": "Cerease",
+    "price": 10.88,
+    "image": "prod/cerease.png",
+    "categoryImg": "prod/baverages.png",
+    "categoryName": "Baverages"
+  },
+    {
+    "id": 110,
+    "name": "Vegetables",
+    "price": 10.4,
+    "image": "prod/vegetable.png",
+    "categoryName": "Vagetables"
+  },
+    {
+    "id": 109,
+    "name": "Spinach",
+    "price": 20.5,
+    "image": "prod/spinach.png",
+    "categoryName": "Baverages"
+  }  
+
 ]

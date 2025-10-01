@@ -1,0 +1,99 @@
+[
+   {
+    "categories": [{
+         "id": 1,
+        "name": "Vegetables",
+        "image": "prod/vegetabe.png",
+        
+        "products": [
+        {
+            "id": 101,
+            "name": "Watermilon",
+            "image": "prod/milon.png",
+            "price": 23.5
+        },
+        {
+            "id": 102,
+            "name": "Banana",
+            "image": "prod/milon.png",
+            "price": 34.3
+        },
+        {
+            "id": 103,
+            "name": "Banana",
+            "image":"prod/milon.png",
+            "price":23.5
+        },
+        {
+            "id": 104,
+            "name": "Banana",
+            "image":"prod/milon.png",
+            "price":23.5
+        },
+        {
+            "id": 105,
+            "name": "Banana",
+            "image":"prod/milon.png",
+            "price":23.5
+        },
+        {
+            "id": 106,
+            "name": "Banana",
+            "image":"prod/milon.png",
+            "price":23.5
+        }]},
+
+
+        {
+            "id": 2,
+            "name": "Baverages",
+            "image": "prod/baverages.png",
+            "products": [
+                {
+                    "id": 201,
+                    "name": "Cerease",
+                    "image": "prod/cerease.png",
+                    "price": 23.9
+                },
+                {
+                    "id": 202,
+                    "name": "Cerease",
+                    "image": "prod/cerease.png",
+                    "price": 23.9
+                },
+                {
+                    "id": 203,
+                    "name": "Cerease",
+                    "image": "prod/cerease.png",
+                    "price": 23.9
+                },
+                {
+                    "id": 204,
+                    "name": "Cerease",
+                    "image": "prod/cerease.png",
+                    "price": 23.9
+                },
+                {
+                    "id": 205,
+                    "name": "Cerease",
+                    "image": "prod/cerease.png",
+                    "price": 23.9
+                },
+                {
+                    "id": 206,
+                    "name": "Cerease",
+                    "image": "prod/cerease.png",
+                    "price": 23.9
+                }
+            ]
+        }
+
+    
+    
+    
+    
+    ]
+
+
+
+}]
