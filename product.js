@@ -108,4 +108,28 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     })
     .catch((error) => console.error("Error loading products:", error));
+
+
+
+
+
+    // toggle functionality
+    const menuBar = document.getElementById('menuBar');
+    const linksBox = document.getElementById('navLinks');
+    const nav = document.getElementsByClassName('nav')
+    function openNav(){
+    menuBar.addEventListener('click', function (){
+      linksBox.style.display = 'block';
+    })
+    }
+    openNav()
+
+    function closeNav(){
+      nav.addEventListener('click', function (){
+      linksBox.style.display = 'none';
+      })
+    }
+    closeNav();
+
+    
 });

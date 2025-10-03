@@ -1,6 +1,13 @@
 @media (max-width: 600px) {
-    .nav{
-        display: none;
+    header .nav{
+        width: fit-content;
+        display:none;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: right;
+        position: absolute;
+        top: 80px;
+        right: 8px;
     }
 
     body{
@@ -22,19 +29,22 @@
 
     header input{
         max-width: 100px;
-        display: none;
+        display: flex;
         height: 19px;
         padding: 5px;
     }
      #search-btn{
         display: none;
     }
-    #search-btn2, #menuBar, #cart2{
+    #search-btn2, #menuBar, #cart{
     display:flex;
     font-size: 30px;
     color: #fff;
 }
 
+#cart3{
+    display: none;
+}
     .hero-section{
         height: auto;
         display: flex;

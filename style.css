@@ -61,6 +61,13 @@ header input{
     font-size: 30px;
     color: #fff;
     font-weight: lighter;
+    display: none;
+}
+#cart3{
+    display: flex;
+    font-size: 30px;
+    color: #fff;
+    font-weight: lighter;
 }
 
 #login{
@@ -136,11 +143,9 @@ outline: #FBB80DE5;
 }
 
 .hero-section h2{
-width: 540px;
+width: 500px;
 color: white;
 font-size: 40px;
-
-
 }
 
 .hero-image img{
