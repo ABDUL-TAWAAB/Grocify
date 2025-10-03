@@ -52,6 +52,11 @@ header input{
     top: 7px;
     font-size: 22px;
 }
+
+#search-btn2, #menuBar, #cart2{
+    display:none;
+    font-size: 30px;
+}
 #cart{
     font-size: 30px;
     color: #fff;
@@ -307,6 +312,8 @@ max-height: 600px;
     height: auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    text-align: center;
 }
 
 .caption img{
@@ -319,6 +326,9 @@ height: 400px;
     width: 400px;
     font-size: 40px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-left: 9%;
 }
 .cty-title{
@@ -580,14 +590,18 @@ footer{
     gap: 8px;
 }
 .help h4{
+    font-weight: bolder;
     color: white;
     font-weight: bold;
 }
 .help a{
-    font-family: Lato;
-    color: #fff;
+    color: #c7afaf;
     text-decoration: none;
     font-weight: lighter;
+}
+.help a:hover{
+    color: white;
+    transition: 0.3s ease;
 }
 
 .help a:hover{
