@@ -666,7 +666,7 @@ height:fit-content;
 
 .categ-product{
   position: relative;
-  width: 80%;
+  width: 90%;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -677,7 +677,7 @@ height:fit-content;
 
 .categ-product i{
     padding: 4px;
-    font-size:25px;
+    font-size:20px;
     background-color: black;
     color: #fff;
     border-radius: 50%;
@@ -710,8 +710,9 @@ height:fit-content;
 
 .sellingContainer{
   height: auto;
-  display: flex;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
   padding: 20px;
   overflow-x: auto;
   scroll-behavior: smooth;
@@ -725,19 +726,19 @@ height:fit-content;
 }
 
 
-.actualProd-card{
+.actualProdcard{
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 15px;
   display: flex;
   flex-direction: column;
   gap:30px;
-  width: auto;
-  height: auto;
+  width: fit-content;
+  height: fit-content;
   box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
 }
 
-.actualProd-card img{
+.actualProdcard img{
  margin-top: 0;
    width:150px;
   height: 150px;
@@ -776,7 +777,7 @@ height:fit-content;
     align-items: center;
 }
 
-.qty-boxes #decrease, .qty-boxes #increase{
+.qty-boxes .decrease, .qty-boxes .increase{
     width: 20px;
     font-size: 14px;
     color:black;
@@ -785,7 +786,7 @@ height:fit-content;
     padding: 2px;
     border: none;
 }
-#addCart{
+.addCart{
     padding: 2px 6px;
     background-color: #4B773B;
     color: #fff;

@@ -27,8 +27,8 @@
                 <li><a href="#About">About</a></li>
                 <li><a href="#Conatct">Conatct</a></li>
                 <i class='bxr  bx-cart' id="cart3"></i>
-                <a id="login" href="">Log In</a>
-                <a id="register" href="">Register</a>
+                <a id="login" href="login.html">Log In</a>
+                <a id="register" href="register.html">Register</a>
              </ul>
             
         </header>
@@ -83,18 +83,23 @@
 
         <div class="time">
             <div class="t-box">
-                <h3>00</h3>
+                <h3 id="days">00</h3>
                 <p>DAYS</p>
             </div>
 
             <div class="t-box">
-                <h3>00</h3>
+                <h3 id="hours">00</h3>
                 <p>HOURS</p>
             </div>
 
             <div class="t-box">
-                <h3>00</h3>
+                <h3 id="minutes">00</h3>
                 <p>MINS</p>
+            </div>
+
+            <div class="t-box">
+                <h3 id="seconds">00</h3>
+                <p>SEC</p>
             </div>
         </div>
         <br><br>
@@ -132,10 +137,10 @@
             </div>
             <br><br>
             <div class="categ-product">
-                <i class='bxr  bx-chevrons-left' id="prev-btn"></i>
+                <i class='bxr  bx-chevrons-left' id="prev-btn2"></i>
                 <div id="products-container" class="productContainer">
                 </div>
-                <i class='bxr  bx-chevrons-right' id="next-btn"></i>
+                <i class='bxr  bx-chevrons-right' id="next-btn2"></i>
             </div>
 
             <div class="view-more">
@@ -152,9 +157,7 @@
 
         <!--==================== Api fetced from the product.json file============-->
         <div class="buyProd" id="">
-            <i class='bxr  bx-chevrons-left' id="prev-btn"></i>
             <div class="sellingContainer" id="selling-container"> </div>
-            <i class='bxr  bx-chevrons-right' id="next-btn"></i>
         </div>
 
         <div class="view-more">
@@ -271,13 +274,14 @@
     </section>
 
 
-    <footer>
+    <footer id="Conatct">
         <div class="cpy-logo">
             <img src="images/Grocify.png" alt="">
         </div>
         <div class="links">
             <div id="useful-links" class="help">
                 <h4>Useful Links</h4>
+                <a href="#Home">Home</a>
                 <a href="#About">About</a>
                 <a href="#">Services</a>
                 <a href="#">Contact</a>
