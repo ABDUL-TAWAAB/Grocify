@@ -188,7 +188,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // search button display on mobile view
      
     const searchBtn = document.getElementById('search-btn2');
-    const inputBtn = document.querySelector('input')
+    const inputBtn = document.querySelector('.Search')
 
     searchBtn.addEventListener('click', () =>{
       inputBtn.classList.toggle('open');
@@ -196,10 +196,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function searchItems() {
       let input = inputBtn.value.toLowerCase();
-      let items = document.querySelectorAll(".product-card,.actualProdcard")
+      let items = document.querySelectorAll(".sellingContainer,.actualProdcard")
 
       items.forEach(item => {
-        
+        item
       })
     }
 
