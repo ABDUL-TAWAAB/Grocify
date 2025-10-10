@@ -7,13 +7,14 @@ form.addEventListener("submit", (e) => {
   const name = document.getElementById("name").value.trim();
   const email = document.getElementById("email").value.trim();
   const password = document.getElementById("password").value;
+  
 
   // check if user already exists
   let users = JSON.parse(localStorage.getItem("users")) || [];
   const existingUser = users.find(user => user.email === email);
 
   if (existingUser) {
-    message.textContent = "⚠️ User already exists. Please log in.";
+    message.textContent = "User already exists. Please log in.";
     return;
   }
 
@@ -23,8 +24,19 @@ form.addEventListener("submit", (e) => {
   localStorage.setItem("users", JSON.stringify(users));
 
   message.style.color = "green";
-  message.textContent = "✅ Registration successful! You can now log in.";
+  message.textContent = "Registration successful! You can now log in.";
 
   // clear form
   form.reset();
+
+  // check password
+  let confiempassword = document.getElementById('passwordvalue');
+  let eyeclosed = document.getElementById('eyeclosed');
+  eyeclosed.addEventListener('click', () => {
+    if(confiempassword.type == "password"){
+      confiempassword.type = "text";
+    }else{
+      confiempassword.type = "password"
+    }
+  })
 });

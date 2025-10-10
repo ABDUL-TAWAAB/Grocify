@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Register</title>
+  <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
   <style>
     body {
+      width: 100%;
       font-family: 'poppins', sans-serif;
       display: flex;
       justify-content: center;
@@ -13,6 +15,7 @@
       background: #f9f9f9;
     }
     .register-box {
+      width: 100%;
       background: #fff;
       display: flex;
       flex-direction: column;
@@ -24,15 +27,18 @@
       width: 300px;
     }
     .register-box h2 {
-        font-size: 35px;
+      font-size: 35px;
       text-align: center;
       margin-bottom: 20px;
     }
     .register-box input {
-      width: 80%;
-      padding: 10px;
+      width: 100%;
+      padding: 8px;
       margin: 8px 0;
-      border: 1px solid #ccc;
+      border: 0;
+      outline: 0;
+      font-size: 16px;
+      color: black;
       border-radius: 5px;
     }
     .register-box button {
@@ -48,9 +54,10 @@
     #registerForm{
         display: flex;
         flex-direction: column;
+        gap: 20px;
         align-items: center;
         justify-content: center;
-        width: 100%;
+        width: 80%;
     }
     .register-box button:hover {
       background: darkgreen;
@@ -59,6 +66,19 @@
       text-align: center;
       margin-top: 10px;
       color: red;
+    }
+
+    .name,.emial,.password,.phone-no,.country,.city,.country,.street{
+      width: 100%;
+      padding: 0 10px;
+      border: 1px solid #ccc;
+      display: flex;
+      border-radius: 5px;
+      align-items: center;
+    }
+
+    i {
+      cursor: pointer;
     }
 
     .alreadyHaveAcc{
@@ -81,17 +101,57 @@
       border-radius: 10px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
       width: 500px;
+      <i class='bxr  bx-eye'  ></i> 
     }
     }
   </style>
+
 </head>
 <body>
   <div class="register-box">
     <h2>Register</h2>
-    <form id="registerForm">
-      <input type="text" id="name" placeholder="Full Name" required>
-      <input type="email" id="email" placeholder="Email" required>
-      <input type="password" id="password" placeholder="Password" required>
+    <form id="registerForm" action="index.html">
+
+      <div class="name">
+        <input type="text" id="name" placeholder="Full Name" required>
+        <i class='bxr  bx-user'  ></i> 
+      </div>
+
+      <div class="emial">
+        <input type="email" id="email" placeholder="Email" required>
+        <i class='bxr  bx-mail-open'  ></i> 
+      </div>
+
+      <div class="password">
+        <input type="password" id="password" placeholder="Password" required>
+        <i class='bxr  bx-eye-slash'  id="eyeclosed" ></i> 
+      </div>
+
+      
+      <div class="password">
+        <input type="password" id="confirmPassword" placeholder="Confirm password" required>
+        <i class='bxr  bx-eye-slash'  ></i> 
+      </div>
+
+      <div class="phone-no">
+        <input type="text" placeholder="Phone number" required>
+        <i class='bxr  bx-phone'  ></i> 
+      </div>
+
+      <div class="country">
+        <input type="text" placeholder="Country" required>
+        <i class='bxr  bx-flag-alt'  ></i> 
+      </div>
+
+      <div class="city">
+        <input type="text" placeholder="City or Town" required>
+        <i class='bxr  bx-city'  ></i>  
+      </div>
+
+      <div class="street">
+          <input type="text" placeholder="Street or house Address">
+          <i class='bxr  bx-street-view'  ></i> 
+      </div>
       <button type="submit">Register</button>
     </form>
     <a class="alreadyHaveAcc" href="login.html">Already have an account? <span>login</span></a>

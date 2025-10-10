@@ -74,13 +74,13 @@ document.addEventListener("DOMContentLoaded", () => {
   </div>
           `;
 
-          // --- Now safely select elements ---
+          //select elements 
       const increaseBtn = actualProd.querySelector(".increase");
       const decreaseBtn = actualProd.querySelector(".decrease");
       const addCartBtn = actualProd.querySelector(".addCart");
       const quantityEl = actualProd.querySelector(".quantity");
       if (!increaseBtn || !decreaseBtn || !addCartBtn || !quantityEl) {
-        console.error("Buttons/quantity element missing in template!");
+        console.error("Buttons or element missing");
         return;
       }
 
@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .catch((error) => console.error("Error loading actual Product:", error));
     
-    // --- Cart Functions ---
+    // Cart Functions 
   function addToCart(product, qty) {
   // get existing cart or start new
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -190,9 +190,20 @@ document.addEventListener("DOMContentLoaded", () => {
     const searchBtn = document.getElementById('search-btn2');
     const inputBtn = document.querySelector('input')
 
-    searchBtn.addEventListener('click', () => {
-      inputBtn.style.display = 'flex';
+    searchBtn.addEventListener('click', () =>{
+      inputBtn.classList.toggle('open');
     })
+
+    function searchItems() {
+      let input = inputBtn.value.toLowerCase();
+      let items = document.querySelectorAll(".product-card,.actualProdcard")
+
+      items.forEach(item => {
+        
+      })
+    }
+
+  
 
 
     // direction to cart
@@ -211,7 +222,7 @@ document.addEventListener("DOMContentLoaded", () => {
         })
 
 
-        // ====== COUNT DOWN FOR FLASH PRODUCTS=====
+        //  COUNT DOWN FOR FLASH PRODUCTS
         // Set the date we are counting down to 
 const countdownDate = new Date("Oct 20, 2025 00:00:00").getTime();
 

@@ -43,7 +43,9 @@ header input{
     border-radius: 15px;
     outline: none;
     padding: 5px;
+    font-size: 19px;
 }
+
 
 #search-btn{
     align-self: center;
@@ -68,6 +70,9 @@ header input{
     font-size: 30px;
     color: #fff;
     font-weight: lighter;
+}
+#cart:hover{
+    color: black;
 }
 
 #login{
@@ -146,6 +151,19 @@ outline: #FBB80DE5;
 width: 500px;
 color: white;
 font-size: 40px;
+animation: showup2 3s ease-in;
+}
+
+@keyframes showup2{
+    from{
+        opacity: 0;
+        transform: scale(0.1);
+        transform: translateX(-30%);
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 .hero-image img{
@@ -153,7 +171,21 @@ width: 600px;
 height: 500px;
 top: 1179.99px;
 left: 1336.75px;
+animation: showup1 3s ease-in;
 }
+
+@keyframes showup1{
+    from{
+        opacity: 0;
+        transform: scale(0.1);
+        transform: translateX(30%);
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
 
 .section2{
     width: 100%;
@@ -285,9 +317,8 @@ max-height: 600px;
 
 .view-more{
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
-    padding-right: 130px;
 }
 
 .view-more a{
@@ -365,16 +396,13 @@ height: 400px;
     text-transform: uppercase;
 }
 
-
 .grocery-display img{
-    width: 500px;
-    height: 500px;
-    position: relative;
-    top: 100px;    
+    width: 300px;
+    position: relative;    
 }
 
 #happy-c{
-    margin-top: 50px;
+    margin-top: -250px;
 }
 
 .our-clients{
@@ -450,7 +478,7 @@ text-align: center;
 
 }
 
-/*===============Download mon=bile app view==========*/
+/*===============Download mobile app view==========*/
 
 .mobile-app{
     margin-top: 50px;
@@ -678,7 +706,7 @@ height:fit-content;
 .categ-product i{
     padding: 4px;
     font-size:20px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.37);
     color: #fff;
     border-radius: 50%;
 }
