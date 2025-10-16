@@ -5,174 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
+    <link rel="stylesheet" href="login.css">
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
     <style>
-        body {
-            display: flex;
-            height: 700px;
-            align-content: center;
-            justify-content: center;
-            margin: 0;
-            padding: 0;
-            font-family: 'poppins', sans-serif;
-        }
 
-        .cotainer {
-            width: 700px;
-            height: auto;
-            align-items: center;
-            justify-content: center;
-            display: flex;
-        }
-
-        form {
-            width: 80%;
-            height: auto;
-            display: flex;
-            justify-content: space-between;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            border-radius: 10px;
-            padding-right: 20px;
-        }
-
-        form .logo {
-            width: 200px;
-            height: auto;
-        }
-
-        .box {
-            border-top-right-radius: 16px;
-            border-bottom-right-radius: 16px;
-            border-top-left-radius: 10px;
-            border-bottom-left-radius: 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 5px;
-            justify-content: center;
-            width: 50%;
-            background: linear-gradient(126.52deg, #4B773B 40.84%, rgba(58, 111, 40, 0.88) 48.71%, rgba(74, 149, 47, 0.76) 64.46%);
-            ;
-
-        }
-
-        .box h2 {
-            color: #fff;
-            font-size: 28px;
-        }
-
-        .mdi {
-            width: 25px;
-            filter: brightness(0) invert(1);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        i{
-            cursor: pointer;
-        }
-
-        .loginDetails {
-            width: 46%;
-        }
-
-        .loginDetails h1 {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .detailsNeeded{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap:10px;
-        }
-        .detailsNeeded input {
-            width: 100%;
-            padding: 8px;
-            margin: 8px 0;
-            border: 0;
-            outline: 0;
-            font-size: 16px;
-            color: black;
-            border-radius: 5px;
-        }
-
-        #forgetPassword {
-            font-size: 16px;
-        }
-
-        .dv {
-            width: 100%;
-            height: auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        button {
-            width: 140px;
-            height: 30px;
-            background-color: #000000DE;
-            color: #fff;
-            border-radius: 10px;
-            margin-bottom: 10px;
-            align-self: center;
-            border: none;
-            font-weight: bold;
-        }
-
-        .emial,
-        .password {
-            width: 80%;
-            padding: 0 10px;
-            border: 1px solid #ccc;
-            display: flex;
-            border-radius: 5px;
-            align-items: center;
-        }
-
-        button:hover {
-            background-color: #fff;
-            color: #000000DE;
-            transition: 0.3s ease;
-        }
-
-        @media (max-width:600px) {
-            body {
-                max-height: 600px;
-            }
-
-            .box {
-                display: none;
-            }
-
-            .loginDetails {
-                height: fit-content;
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-
-        }
     </style>
 </head>
 
 <body>
-    <div class="cotainer">
-        <form action="index.html">
-            <div class="box">
-                <h2>Welcome Back To</h2>
-                <img class="logo" src="/images/Grocify.png" alt="company logo">
-                <div class="media">
-                    <img class="mdi" src="/images/image 1.png" alt="">
-                    <img class="mdi" src="/images/image 2.png" alt="">
-                    <img class="mdi" src="/images/image 3.png" alt="">
-                </div>
+    <div class="all-content-container">
+        
+        <!--============================form container----===================-->
+        <div class="cotainer">
+        <div class="box">
+            <img class="logo" src="/images/Grocify.png" alt="company logo">
+            <h2>Welcome Back!</h2>
+            <p>Log in to access your account, track your orders, save your favorite items, and enjoy a faster shopping experience.</p>
+            <div class="media">
+                <img class="mdi" src="/images/image 1.png" alt="">
+                <img class="mdi" src="/images/image 2.png" alt="">
+                <img class="mdi" src="/images/image 3.png" alt="">
             </div>
-
+    
+    
+            <span>Don’t have an account yet? Register now!</span>
+    
+            <div class="register-container">
+                <i class='bxr  bx-user-plus'  ></i> 
+                <a href="register.html">Register here</a>
+            </div>
+        </div>
+        <form action="index.html">
             <div class="loginDetails">
                 <h1>LOGIN</h1>
                 <div class="detailsNeeded">
@@ -183,13 +46,64 @@
                     <div class="password">
                         <input type="password" id="password" placeholder="Password" required>
                         <i class='bxr  bx-eye-slash' id="eyeclosed"></i>
+                         <i class='bxr  bx-eye' style="display: none; " id="eyeopen" ></i> 
                     </div>
                     <p><a href="#" id="forgetPassword">Forget Password?</a></p>
-                    <div class="dv"><button>LOGIN</button></div>
+                    <div class="dv"><button type="submit" onclick="login()">LOGIN</button></div>
                 </div>
             </div>
         </form>
     </div>
-</body>
 
+    </div>
+
+
+     <footer id="Conatct">
+        <div class="cpy-logo">
+            <img src="images/Grocify.png" alt="">
+        </div>
+        <div class="links">
+            <div id="useful-links" class="help">
+                <h4>Useful Links</h4>
+                <a href="#Home">Home</a>
+                <a href="#About">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <div class="help">
+                <h4>Help</h4>
+                <a href="#">Customer Support</a>
+                <a href="#">Delivery Details</a>
+            </div>
+
+
+            <div id="connect" class="help">
+                <h4>Get Connected</h4>
+                <a href="#">Join the conversation on social media and stay connected with our latest products and
+                    Services.</a>
+                <div class="media">
+                    <img src="images/image 1.png" alt="">
+                    <img src="images/image 2.png" alt="">
+                    <img src="images/image 3.png" alt="">
+                </div>
+            </div>
+
+            <div id="saved" class="help">
+                <h4>Stay Informed</h4>
+                <a href="#">Subscribe to our notification to receive updates of new products and services.
+                </a>
+                <h4 class="sub">
+                    <a href="#">Subscribe</a>
+                </h4>
+            </div>
+        </div>
+
+        <div class="p-p">
+            <p>Privacy Policy | Terms of Use | Refund Policy
+            </p>
+        </div>
+    </footer>
+    <script src="login.js" defer></script>
+</body>
 </html>

@@ -78,6 +78,62 @@
     "price": 20.5,
     "image": "prod/spinach.png",
     "categoryName": "Baverages"
-  }  
+  },
+  {
+    "id": 110,
+    "name": "Orange",
+    "price": 20.5,
+    "image": "prod/oranges.jpg",
+    "categoryName": "Baverages"
+  },
+  {
+    "id": 111,
+    "name": "Apple",
+    "price": 15.5,
+    "image": "prod/apple.jpg",
+    "categoryName": "Baverages"
+  },
 
+  {
+    "id": 112,
+    "name": "Carrot",
+    "price": 20.5,
+    "image": "prod/carrots.jpg",
+    "categoryName": "Baverages"
+  },
+  {
+    "id": 113,
+    "name": "Watermelon",
+    "price": 30,
+    "image": "prod/cutWatermelon.jpg",
+    "categoryName": "Baverages"
+  },
+  {
+    "id": 114,
+    "name": "Cocoyarm",
+    "price": 20.5,
+    "image": "prod/dankali.jpg",
+    "categoryName": "Baverages"
+  },
+  {
+    "id": 115,
+    "name": "Salat",
+    "price": 20.5,
+    "image": "prod/salat.jpg",
+    "categoryName": "Baverages"
+  },
+  {
+    "id": 116,
+    "name": "Straberry",
+    "price": 20.5,
+    "image": "prod/strawberrys.jpg",
+    "categoryName": "Baverages"
+  },
+  {
+    "id": 117,
+    "name": "Tomatoes",
+    "price": 20.5,
+    "image": "prod/tomotoes.jpg",
+    "categoryName": "Baverages"
+  }
 ]

@@ -14,8 +14,8 @@
     <main>
         <header>
             <img src="images/Grocify.png" alt="company logo">
-            <div class="Search"><input type="text" placeholder="Search Product" onkeyup="searchItems()"><i
-                    id="search-btn" class='bxr  bx-search'></i>
+            <div class="Search"><input id="searchBtn" type="text" placeholder="Search Product"
+                    onkeyup="searchProduct()"><i id="search-btn" class='bxr  bx-search'></i>
             </div>
 
 
@@ -27,19 +27,28 @@
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#About">About</a></li>
                 <li><a href="contact-us.html">Conatct</a></li>
-                <i class='bxr  bx-cart' id="cart3"></i>
+                <div class="cart-icon-container"><i class='bxr  bx-cart' id="cart3"></i><span id="cartCounter">0</span>
+                </div>
+                <div class="accountBox"></div>
                 <a id="login" href="login.html">Log In</a>
                 <a id="register" href="register.html">Register</a>
+                <span id="userInfo"></span>
+                </div>
             </ul>
 
         </header>
         <div id="Home" class="hero-section">
-            <h2>Buy your groceries and have it delivered
-                to your doorstep with ease.</h2>
+            <div class="goto">
+                <h2>Buy your groceries and have it delivered
+                    to your doorstep with ease.</h2>
+                <a href="#Productpage">SHOPE PRUDUCT</a>
+            </div>
             <div class="hero-image">
                 <img src="images/grocery-png-115539559137hbqku3ydb-removebg-preview 1.png" alt="">
             </div>
         </div>
+
+
     </main>
     <!--===== sevices section============-->
 
@@ -107,8 +116,10 @@
     </div>
     <div class="div">
         <div class="flash-product" id="page">
-            <i class='bxr  bx-chevrons-right' id="next-btn" style="float: right; margin-right: 50px; margin-left: 20px; font-size: 25px; background-color: rgba(0, 0, 0, 0.61); color: white; border-radius: 50px; padding: 3px;"></i>
-            <i class='bxr  bx-chevrons-left' id="prev-btn" style="float: right; font-size: 25px; background-color: rgba(0, 0, 0, 0.61); color: white; border-radius: 50px;padding: 3px;"></i>
+            <i class='bxr  bx-chevrons-right' id="next-btn"
+                style="float: right; margin-right: 50px; margin-left: 20px; font-size: 25px; background-color: rgba(0, 0, 0, 0.61); color: white; border-radius: 50px; padding: 3px;"></i>
+            <i class='bxr  bx-chevrons-left' id="prev-btn"
+                style="float: right; font-size: 25px; background-color: rgba(0, 0, 0, 0.61); color: white; border-radius: 50px;padding: 3px;"></i>
 
             <br><br><br>
             <div class="categ-product">
@@ -139,19 +150,21 @@
         <div class="cty-title">
             <h2>Shop by category</h2>
         </div>
-        <i class='bxr  bx-chevrons-right' id="next-btn2" style="float: right;  margin-right: 50px; margin-left: 20px; font-size: 25px; background-color: rgba(0, 0, 0, 0.61); color: white; border-radius: 50px;padding: 3px;"></i>
-        <i class='bxr  bx-chevrons-left' id="prev-btn2" style="float: right; font-size: 25px; background-color: rgba(0, 0, 0, 0.61); color: white; border-radius: 50px; padding: 3px;"></i>
+        <i class='bxr  bx-chevrons-right' id="next-btn2"
+            style="float: right;  margin-right: 50px; margin-left: 20px; font-size: 25px; background-color: rgba(0, 0, 0, 0.61); color: white; border-radius: 50px;padding: 3px;"></i>
+        <i class='bxr  bx-chevrons-left' id="prev-btn2"
+            style="float: right; font-size: 25px; background-color: rgba(0, 0, 0, 0.61); color: white; border-radius: 50px; padding: 3px;"></i>
         <br><br><br>
         <div class="categ-product">
-            
+
             <div id="products-container" class="productContainer">
             </div>
-            
+
         </div>
 
-        <div class="view-more">
+       <!-- <div class="view-more">
             <a href="#">View More</a>
-        </div>
+        </div>-->
     </div>
 
     <!--============Groceyy-display section======-->
@@ -162,12 +175,17 @@
         </div>
 
         <!--==================== Api fetced from the product.json file============-->
-        <div class="buyProd" id="page">
+        <div class="buyProd" id="Productpage">
             <div class="sellingContainer" id="selling-container"> </div>
         </div>
 
+        <!--=======notification========-->
+        <div class="notification">
+            <p>Item added to your cart</p>
+        </div>
+
         <div class="view-more">
-            <a href="#">View More</a>
+            <button href="" id="viewMore">View All</button>
         </div>
         <div class="gcry-image">
             <img src="images/istockphoto-513986542-1024x1024-removebg-preview 2.png" alt="">

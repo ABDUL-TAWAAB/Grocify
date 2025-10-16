@@ -6,31 +6,120 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Form</title>
   <link rel="stylesheet" href="contact.css">
+  <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-  <h2>Contact Us</h2>
 
-  <form action="https://api.web3forms.com/submit" method="POST">
-    <input type="hidden" name="access_key" value="ea4ed182-7748-41cf-9213-6835b3c5b513">
-    <label>Name:</label>
-    <input type="text" placeholder="Name here" name="name">
+  <div class="main-container">
 
-    <label>Email:</label>
-    <input type="email" name="email" placeholder="example@gmail.com" required>
+    <div class="fast-contact-container">
+      <h2>Contact Us</h2>
+      <div class="short-discription-container">
+        <p>We are committed to processing the information
+          in order to contact you and talk about your product or
+          concerns</p>
+      </div>
 
-    <label>Message:</label>
-    <textarea name="message" id="message" placeholder="Your message here" required></textarea>
+      <div class="contact-links-container">
+        <div class="link-container">
+          <i class='bxr  bx-envelope-alt'></i>
+          <a href="#">grocery93@gmail.com</a>
+        </div>
 
-    <!-- Redirect after success -->
-    <input type="hidden" name="redirect" value="thankYou.html">
+        <div class="link-container">
+          <i class='bxr  bx-home-circle'></i>
+          <a id="location"
+            href="https://www.google.com/maps/place/Akenten+Appiah+Menka+University+of+Skills+Training+and+Entrepreneurial+Development/@6.6972961,-1.6815777,17z/data=!3m1!4b1!4m6!3m5!1s0xfdb9998d2004f49:0x459111bffee6e328!8m2!3d6.6972961!4d-1.6815777!16s%2Fg%2F11shm6ywyz?entry=ttu&g_ep=EgoyMDI1MTAwOC4wIKXMDSoASAFQAw%3D%3D">M8W9+W9
+            Kumasi sunyani Road, Kumasi</a>
+        </div>
 
-    <button type="submit">Send Message</button>
+        <div class="link-container">
+          <i class='bxr  bx-mobile-ring'></i>
+          <a href="https://wa.me/+233531691093">+233 531 691 093</a>
+        </div>
+      </div>
+    </div>
 
 
+    <div class="form-container">
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="ea4ed182-7748-41cf-9213-6835b3c5b513">
+        <label>Name:</label>
+        <input type="text" placeholder="Name here" name="name">
 
-  </form>
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="example@gmail.com" required>
 
+
+        <label>Phone:</label>
+        <input type="text" name="Phone" placeholder="1234567890" required>
+
+        <label>Message:</label>
+        <textarea name="message" id="message" placeholder="Your message here" required></textarea>
+
+        <!-- Redirect after success -->
+        <input type="hidden" name="redirect" value="thankYou.html">
+
+        <button type="submit">Send Message</button>
+
+      </form>
+    </div>
+  </div>
+
+  <div class="continue-shopping">
+    <i class='bxr  bx-arrow-left-stroke'></i>
+    <a href="index.html">continue shopping</a>
+  </div>
+
+
+  <!---=====================footer section=============-->
+
+  <footer id="Conatct">
+    <div class="cpy-logo">
+      <img src="images/Grocify.png" alt="">
+    </div>
+    <div class="links">
+      <div id="useful-links" class="help">
+        <h4>Useful Links</h4>
+        <a href="index.html">Home</a>
+        <a href="index.html">About</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div class="help">
+        <h4>Help</h4>
+        <a href="#">Customer Support</a>
+        <a href="#">Delivery Details</a>
+      </div>
+
+
+      <div id="connect" class="help">
+        <h4>Get Connected</h4>
+        <a href="#">Join the conversation on social media and stay connected with our latest products and
+          Services.</a>
+        <div class="media">
+          <img src="images/image 1.png" alt="">
+          <img src="images/image 2.png" alt="">
+          <img src="images/image 3.png" alt="">
+        </div>
+      </div>
+
+      <div id="saved" class="help">
+        <h4>Stay Informed</h4>
+        <a href="#">Subscribe to our notification to receive updates of new products and services.
+        </a>
+        <h4 class="sub">
+          <a href="#">Subscribe</a>
+        </h4>
+      </div>
+    </div>
+
+    <div class="p-p">
+      <p>Privacy Policy | Terms of Use | Refund Policy
+      </p>
+    </div>
+  </footer>
   <script defer></script>
 </body>
 

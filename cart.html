@@ -15,8 +15,6 @@
     <img src="images/Grocify.png" alt="company logo">
     <div class="Search"><input type="text" placeholder="Search"><i id="search-btn" class='bxr  bx-search'></i>
     </div>
-
-
     <i class='bxr  bx-cart' id="cart"></i>
     <i id="search-btn2" class='bxr  bx-search'></i>
     <i class='bxr  bx-cart' id="cart2"></i>
@@ -25,29 +23,42 @@
       <li><a href="index.html">Home</a></li>
       <li><a href="index.html #About">About</a></li>
       <li><a href="contact-us.html">Conatct</a></li>
-      <i class='bxr  bx-cart' id="cart3"></i>
-      <a id="login" href="login.html">Log In</a>
-      <a id="register" href="register.html">Register</a>
+      <div class="cart-icon-container"><i class='bxr  bx-cart' id="cart3"></i><span id="cartCounter2">0</span></div>
     </ul>
   </header>
   <h1>Your Shopping Cart</h1>
   <div class="cart-box">
     <div id="cart-container"></div>
-    
+
+    <!-- Delete confirmation popup -->
+    <div class="popup-overlay" id="popup">
+      <div class="popup-box">
+        <div class="delete-icon">
+          <i class='bxr  bx-trash'></i>
+        </div>
+        <h3>DELETE PRODUCT?</h3>
+        <p>Your product will be deleted from Cart.</p>
+        <div class="popup-buttons">
+          <button class="btn no-btn" id="noBtn">Cancel</button>
+          <button class="btn yes-btn" id="yesBtn">Delete</button>
+        </div>
+      </div>
+    </div>
+
 
     <div class="discounts-box">
       <h1>Summary</h1>
 
       <div class="discounst">
 
-        
+
       </div>
       <h4 id="total"></h4>
     </div>
   </div>
 
   <div class="back">
-    <a href="index.html"><i class='bxr  bx-arrow-left-stroke'  ></i> continue Shopping</a>
+    <a href="index.html"><i class='bxr  bx-arrow-left-stroke'></i> continue Shopping</a>
   </div>
   <footer id="Conatct">
     <div class="cpy-logo">

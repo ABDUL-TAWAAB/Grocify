@@ -60,3 +60,36 @@
   </script>
 </body>
 </html>
+
+
+
+<!-- fetch("products.json")
+    .then((res) => res.json())
+    .then((data) => {
+      const prodContainer = document.getElementById("selling-container");
+
+      data.forEach((actualproduct) => {
+        // create product card for actual product
+        const actualProd = document.createElement("div");
+        actualProd.classList.add("actualProdcard");
+
+        actualProd.innerHTML = `
+        <div class="product-image">
+        <img src="${actualproduct.image}" alt="${actualproduct.name}">
+        
+          <div class="add">
+          <h4 class="product-name">${actualproduct.name}</h4>
+        <p class="product-price">Price: GHS${actualproduct.price}</p>
+        </div>
+        
+        </div>
+         <div class="qty-box">
+    <div class="qty-boxes"> 
+      <button class="decrease"> - </button> 
+      <input type="number" value="0" min="1" class="quantity"> 
+      <button class="increase"> + </button>
+    </div>
+    <button class="addCart"> Add to Cart </button>
+    </div>
+          `;
+-->

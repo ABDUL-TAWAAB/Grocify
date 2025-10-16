@@ -1,4 +1,4 @@
-* {
+ * {
     margin: 0;
     padding: 0;
     font-family: 'poppins', sans-serif;
@@ -7,7 +7,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #fcd6d6;
+    background-color: #fff;
     font-family: 'poppins', sans-serif;
 }
 
@@ -159,7 +159,7 @@ h1 {
 }
 
 header {
-    width: 100%;
+    width: 70%;
     height: auto;
     padding: 25px 20px;
     background-color: transparent;
@@ -170,7 +170,7 @@ header {
 }
 
 .nav {
-    width: 800px;
+    width: 400px;
     display: flex;
     justify-content: space-between;
 }
@@ -206,25 +206,47 @@ header input {
 
 #cart {
     font-size: 30px;
-    color: blue;
+    color: black;
     font-weight: lighter;
     display: none;
+}
+
+.cart-icon-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    cursor: pointer;
+}
+
+.cart-icon-container span{
+    background-color: red;
+    width: 15px;
+    height: 15px;
+    color: white;
+    font-size: 16px;
+    padding: 6px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    top: -10px;
+    right: 10px;
 }
 
 #cart3 {
     display: flex;
     font-size: 30px;
-    color: blue;
+    color: black;
     font-weight: lighter;
 }
 
 #cart:hover {
-    color: black;
+    color: rgb(146, 112, 1);
 }
 
 #login {
     padding: 5px;
-    border: 1px solid blue;
+    border: 1px solid black;
     border-radius: 20px;
     width: 100px;
     display: flex;
@@ -232,7 +254,7 @@ header input {
     justify-content: center;
 }
 
-#login:hover {
+/*#login:hover {
     background-color: blue;
     border: none;
     color: #fff;
@@ -257,7 +279,7 @@ header input {
     border-radius: 20px;
     background-color: transparent;
     transition: 0.5s ease-in-out;
-}
+}*/
 
 header li {
     list-style: none;
@@ -266,8 +288,58 @@ header li {
 header a {
     text-decoration: none;
     font-size: 22px;
-    color: blue;
+    color: black;
 }
+
+/* Popup background overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: none; /* Hidden by default */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Popup box */
+.popup-box {
+  background: #fff;
+  height: 250px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* Buttons inside popup */
+.popup-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.delete-icon{
+    font-size: 100px;
+    color: red;
+}
+
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.yes-btn {
+  background-color: #ff4d4d;
+  color: rgb(255, 255, 255);
+}
+
+.no-btn {
+  background-color: #ccc;
+}
+
 
 
 
