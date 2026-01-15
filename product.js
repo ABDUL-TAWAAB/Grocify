@@ -249,7 +249,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //  COUNT DOWN FOR FLASH PRODUCTS
   // Set the date we are counting down to
-  const countdownDate = new Date("Oct 20, 2025 00:00:00").getTime();
+  const countdownDate = new Date("Jan 30, 2026 00:00:00").getTime();
 
   // Update the countdown every 1 second
   const timer = setInterval(function () {

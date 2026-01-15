@@ -9,7 +9,6 @@ html {
 }
 
 body {
-    width: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -28,7 +27,7 @@ header {
 }
 
 .nav {
-    width: 800px;
+    width: 600px;
     display: flex;
     justify-content: space-between;
 }
@@ -40,8 +39,8 @@ header img {
 
 header .Search {
     width: 400px;
-    height: 40px;
-    border-radius: 15px;
+    height: 30px;
+    border-radius: 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -171,7 +170,9 @@ main {
 
 .hero-section {
     height: 570px;
+    width: 100%;
     display: flex;
+    padding: 0 30px;
     justify-content: space-evenly;
     margin-top: 100px;
 }
@@ -216,7 +217,7 @@ main {
 }
 
 .hero-image img {
-    width: 850px;
+    width: 650px;
     top: 1150.99px;
     left: 1336.75px;
     animation: showup1 3s ease-in;
