@@ -1,4 +1,4 @@
-// cateories upload fetched from products.json
+ // cateories upload fetched from products.json
 document.addEventListener("DOMContentLoaded", () => {
   fetch("products.json")
     .then((response) => response.json())

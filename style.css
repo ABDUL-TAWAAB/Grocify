@@ -362,9 +362,14 @@ main {
     gap: 10px;
 }
 
-.t-box h3,
-.t-box p {
+.t-box h3{
     color: #fff;
+    font-size: 25px;
+}
+.t-box p {
+    font-size: 20px;
+    color: #fff;
+    
 
 }
 
